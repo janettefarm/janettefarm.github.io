@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+
+	font-family: Verdana, Arial;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	background-color: LightGray;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+}
+
+nav {
+	background-color: Gray;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+	background-color: Violet;
+}
+/*------sivuston ikkunat----------*/
+.jako {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vasen {
+  flex: 35%;
+
+}
+
+.oikea {
+  flex: 65%;
+
+}
+/*---------------------------*/
+
+
+section {
+	background-color: LightGray;
+	padding: 40px;
+	height: 300px;
+	padding-left: 50px;
+
+}
+
+article {
+	background-color: LightGrey;
+	padding: 40px;
+	height: 300px;
+}
+
+aside {
+	background-color: #ffb3b3;
+	padding: 40px;
+	height: 600px;
+	padding-top: 50px;
+	
+}
+
+
+footer{
+	
+	background-color: Gray;
+	padding: 20px;
+	text-align: center;
+	
+}
+
+@media (max-width: 600px) {
+  section, aside, article {
+    width: 100%;
+    height: auto;
+  }
+}
